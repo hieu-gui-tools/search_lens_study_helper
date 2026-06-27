@@ -75,7 +75,7 @@ class MainWindow(QMainWindow):
         self.setStyleSheet(STYLE)
 
         # Icon
-        _icon_path = Path(__file__).resolve().parents[2] / "images" / "icon.png"
+        _icon_path = Path(__file__).resolve().parents[2] / "icon.ico"
         if _icon_path.exists():
             self.setWindowIcon(QIcon(str(_icon_path)))
 
@@ -309,7 +309,7 @@ class MainWindow(QMainWindow):
 
     def _setup_tray(self):
         self._tray = QSystemTrayIcon(self)
-        _icon_path = Path(__file__).resolve().parents[2] / "images" / "icon.png"
+        _icon_path = Path(__file__).resolve().parents[2] / "icon.ico"
         if _icon_path.exists():
             self._tray.setIcon(QIcon(str(_icon_path)))
         else:

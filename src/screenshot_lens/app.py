@@ -20,7 +20,7 @@ def main():
     app.setOrganizationName("ScreenshotLens")
 
     # Icon toàn app (taskbar, tray fallback, Alt+Tab)
-    _icon_path = Path(__file__).resolve().parents[2] / "images" / "icon.png"
+    _icon_path = Path(__file__).resolve().parents[2] / "icon.ico"
     if _icon_path.exists():
         app.setWindowIcon(QIcon(str(_icon_path)))
 
